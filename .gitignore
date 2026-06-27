@@ -1,0 +1,57 @@
+# ==============================
+# Restricted / request-based datasets
+# ==============================
+NuevaEcija_yield_long.csv
+NuevaEcija_2020S1-2025S1_Yield.xlsx
+terrain_muni_stats.csv
+rice_muni_*.csv
+planting_muni_*.csv
+
+# ==============================
+# Large processed datasets
+# ==============================
+FINAL_NDVI_EVI_2019_2025.csv
+FINAL_RAINFALL_2019_2025.csv
+FINAL_SURFACE_TEMP_2019_2025.csv
+FINAL_OTHER_VARS_2019_2025.csv
+
+# ==============================
+# Generated modeling outputs
+# ==============================
+model_df.csv
+train_df.csv
+test_df.csv
+feat_df.csv
+checkpoint*.csv
+baseline*.csv
+combined_results.csv
+cv_folds.csv
+cv_results.csv
+holdout*.csv
+vif_drop_log.csv
+initial_vif_table.csv
+final_vif_table.csv
+feature_sets.json
+feature_correlation*.csv
+selected_*.csv
+selected_*.joblib
+*.joblib
+deployment_*.csv
+deployment*.csv
+model_status.csv
+
+# ==============================
+# Generated output folders
+# ==============================
+chapter4_all_model_equation_outputs/
+chapter4_final_model_spec/
+chapter4_refresh_outputs/
+chapter5_figures/
+web_data/
+
+# ==============================
+# Python / Jupyter cache
+# ==============================
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
