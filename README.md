@@ -179,6 +179,6 @@ araro-rice-yield-prediction/
 * Althea Grace Concha
 * George Emanuel B. Cruz
 
-Bachelor of Science in Data Science and Analytics
-University of Santo Tomas
+Bachelor of Science in Data Science and Analytics  
+University of Santo Tomas  
 Undergraduate Capstone Project, 2026
