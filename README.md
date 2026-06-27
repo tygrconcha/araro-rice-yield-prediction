@@ -68,8 +68,14 @@ araro-rice-yield-prediction/
 ├── ARARO_rice_yield_modeling_pipeline.ipynb
 ├── README.md
 ├── .gitignore
-└── assets/
-    └── araro_system_architecture.png
+├── assets/
+│   └── araro_system_architecture.png
+└── qgis_visualizations/
+    ├── landcover_landuse.jpeg
+    ├── plantingdates_yield_municipal3.jpeg
+    ├── plantingdates_yields2.jpeg
+    ├── ricearea_muni.jpeg
+    └── studyarea_municipality.jpeg
 ```
 
 Some generated outputs may be recreated when the notebook is run locally, such as:
