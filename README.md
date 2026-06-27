@@ -18,6 +18,20 @@ The main notebook builds a machine learning pipeline that:
 6. Selects a deployment-ready model for feature-based prediction and scenario generation.
 7. Produces model outputs, diagnostics, and website-ready CSV/JSON files.
 
+## System Architecture and Workflow
+
+The figure below summarizes the overall ARARO workflow, from data acquisition and preprocessing to model training, validation, output generation, and prototype dashboard preparation.
+
+![ARARO System Architecture](assets/araro_system_architecture.png)
+
+The workflow begins with the acquisition of terrain data, rice area records, planting calendar data, yield records, NDVI/EVI data, rainfall and surface temperature data, and other agroclimate variables. Request-based datasets are obtained from PRiSM/PhilRice and LiPAD, while satellite and climate variables are extracted through Google Earth Engine and open-source gridded datasets.
+
+After acquisition, the datasets are standardized by municipality, year, and semester. The notebook performs key preprocessing steps such as parsing seasonal identifiers, coercing numeric fields, dropping rows with missing core keys, and aggregating monthly predictors into semester-level summaries. Feature screening is then applied to remove redundant variables, control high correlations, and reduce multicollinearity through VIF-based filtering.
+
+The processed dataset is partitioned into training and testing sets using a temporal holdout design. Multiple regression models are trained and evaluated, including Random Forest, XGBoost, Gradient Boosting, Multilayer Perceptron, K-Nearest Neighbors, and Linear Regression. Grouped cross-validation and holdout evaluation are used to support model comparison and selection.
+
+The selected model is refitted and exported for prototype use. Final outputs include prediction tables, diagnostic summaries, planting-month scenario outputs, and CSV/JSON files prepared for web-based visualization and planning support.
+
 ## Main Notebook
 
 The main notebook is:
@@ -54,6 +68,8 @@ araro-rice-yield-prediction/
 ├── ARARO_rice_yield_modeling_pipeline.ipynb
 ├── README.md
 ├── .gitignore
+└── assets/
+    └── araro_system_architecture.png
 ```
 
 Some generated outputs may be recreated when the notebook is run locally, such as:
@@ -105,6 +121,8 @@ araro-rice-yield-prediction/
 ├── ARARO_rice_yield_modeling_pipeline.ipynb
 ├── README.md
 ├── .gitignore
+├── assets/
+│   └── araro_system_architecture.png
 
 ├── FINAL_NDVI_EVI_2019_2025.csv
 ├── FINAL_RAINFALL_2019_2025.csv
