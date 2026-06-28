@@ -76,7 +76,6 @@ araro-rice-yield-prediction/
     ├── landcover_landuse.jpeg
     ├── plantingdates_yield_municipal3.jpeg
     ├── plantingdates_yields2.jpeg
-    ├── ricearea_muni.jpeg
     └── studyarea_municipality.jpeg
 ```
 
