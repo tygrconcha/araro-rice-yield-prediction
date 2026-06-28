@@ -1,4 +1,6 @@
-# ARARO: Rice Yield Prediction in Nueva Ecija
+# ARARO: Agricultural Remote-sensing and Analysis for Rice Outcomes
+
+## Municipality-Level Rice Yield Prediction in Nueva Ecija Using Integrated Remote Sensing, GIS, and Machine Learning
 
 **ARARO** stands for **Agricultural Remote-sensing and Analysis for Rice Outcomes**. This repository contains the modeling notebook for an undergraduate capstone project that develops a municipality-level rice yield prediction framework for Nueva Ecija using remote sensing, GIS, agroclimatic variables, terrain features, and machine learning.
 
